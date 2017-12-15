@@ -5,7 +5,7 @@ app = Flask(__name__)
 def get_cookies():
 	name=request.cookies.get('name')
 	age=request.cookies.get('age')
-	return name+" "+age
+	return "Name: "+name+" "+" Age: "+age
 
 if __name__=='__main__':
 	app.run(port=8080,debug=True)
